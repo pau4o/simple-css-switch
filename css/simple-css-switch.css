@@ -1,0 +1,29 @@
+#s-css-s--menu {
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    color: #fff;
+    background-color: olive;
+    padding: 1em;
+    border: .2em inset #a6a659;
+}
+.s-css-s-button:focus {
+    outline: 0 none;
+}
+.s-css-s-button {
+    display: block;
+    width: 100%;
+    margin: .2em;
+    color: inherit;
+    background-color: inherit;
+    padding: .2em .4em;
+    border-color: #a6a659;
+}
+.s-css-s--active-style {
+    border: 0 none;
+}
+.s-css-s--active-style:before {
+    content: '▶';
+    position: relative;
+    left: -.5em;
+}
