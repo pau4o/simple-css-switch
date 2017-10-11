@@ -1,0 +1,25 @@
+#+TITLE: Simple CSS Switch
+* Installation
+** Download [[file:js/simple-css-switch.js][simple-css-switch.js]] to your project JavaScript folder.
+** HTML modifications
+*** links to CSS files
+    All links to CSS themes must have ~class="s-css-s--style"~ and ~title="Some title"~
+
+    Default theme must have ~rel="stylesheet"~ , other CSS themes must have
+    ~rel="stylesheet alternate"~ See example below:
+    #+BEGIN_SRC html
+      <link class="s-css-s--style" rel="stylesheet"           title="Default style" href="css/main.css">
+      <link class="s-css-s--style" rel="stylesheet alternate" title="Red style"     href="css/red.css">
+      <link class="s-css-s--style" rel="stylesheet alternate" title="Green style"   href="css/green.css">
+    #+END_SRC
+*** Add attribute ~onload="simpleCssSwitch()"~ to *body* tag
+*** Insert container for CSS switch menu
+    Place where you want following snippet
+    #+BEGIN_SRC html
+      <div id="s-css-s--menu"></div>
+    #+END_SRC
+    It will be auto populated with buttons for available CSS themes.
+* Customisation
+  *Simple CSS Switch* has no default positioning and style.
+
+  Example style can be seen in [[file:css/simple-css-switch.css][simple-css-switch.css]]
