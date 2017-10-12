@@ -4,11 +4,11 @@ function simpleCssSwitch() {
     var stylesAvailable = Array.prototype.slice.call(
         document.querySelectorAll('.s-css-s--style')
     );
-    stylesAvailable.forEach(function(style) {
+    stylesAvailable.forEach(function(style, idx) {
         var styleOptionButton = document.createElement('button');
         styleOptionButton.setAttribute('title', style.title);
         styleOptionButton.classList.add('s-css-s-button');
-        styleOptionButton.innerText = style.title;
+        styleOptionButton.innerText = idx;
         styleOptionButton.addEventListener(
             'click', function(e) {
                 chooseStyle(style.title);
