@@ -5,10 +5,10 @@ function simpleCssSwitch() {
         document.querySelectorAll('.s-css-s--style')
     );
     stylesAvailable.forEach(function(style, idx) {
-        var cssFileAsClass = 's-css-s-' + style.href.split('/').pop().replace('.', '-');
+        var cssFileAsClass = 's-css-s--' + style.href.split('/').pop().replace('.', '-');
         var styleOptionButton = document.createElement('button');
         styleOptionButton.setAttribute('title', style.title);
-        styleOptionButton.classList.add('s-css-s-button', cssFileAsClass);
+        styleOptionButton.classList.add('s-css-s--button', cssFileAsClass);
         styleOptionButton.innerText = idx;
         styleOptionButton.addEventListener(
             'click', function(e) {
